@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinyl Groove</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="hero-img-background">
+        <div class="find-your-groove">
+            <p>Find Your Groove</p>
+        </div>
+        <div class="main-content">
+            <header>
+                <nav>
+                    <h1>
+                        <a href="index.html">
+                            <img class="logo" src="images/Vinyl-Groove.png" alt="Vinyl Groove" />
+                        </a>
+                    </h1>
+                    <label class="hamburger-menu">
+                        <input type="checkbox" />
+                    </label>
+                    <ul class="nav-links">
+                        <li><a href="index.html">New Arrivals</a></li>
+                        <li><a href="">Featured</a></li>
+                        <li><a href="">Artists</a></li>
+                        <li><a href="">Sale</a></li>
+                        <li><button data-modal-target="#modal" class="btn nav-btn hidden-on-desktop">Shop Records</button></li>
+                    </ul>
+                    <ul class="right-buttons">
+                        <li><button data-modal-target="#modal" class="btn nav-btn hidden-on-mobile">Shop Records</button></li>
+                        <li><a href=""><img src="images/Shopping_Bag.png" alt="Shopping Bag" class="shopping-bag" /></a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section id="hero">
+                    <div class="hero-content">
+                        <h2>Listen</h2>
+                        <p>Find your next favorite record at Vinyl Groove, from timeless classics to fresh discoveries.
+                            Drop the needle, turn it up, and settle into the sound.</p>
+                        <button data-modal-target="#modal" class="btn">Shop Records</button>
+                    </div>
+                </section>
+                <div class="modal" id="modal">
+                    <div class="modal-content">
+                        <button data-close-button class="close-button">&times;</button>
+                        <div class="title-top">Buy One Record,</div>
+                        <div class="title-bottom">Get One Free</div>
+                        <div class="modal-body">
+                            Double the vinyl, double the groove! Pick your favorites and give your collection a fresh
+                            spin.
+                        </div>
+                        <button class="modal-btn">Shop the Sale</button>
+                    </div>
+                </div>
+                <img id="modal-record" src="images/Modal_Record.png" alt="Vinyl Record" />
+                <div id="overlay"></div>
+            </main>
+        </div>
+        <div class="take-it-for-a-spin">
+                <p>Take it for a Spin</p>
+        </div>
+    </div>
+    <img class="record" src="images/Vinyl_Record.png" alt="Vinyl Record" />
+    <img class="record-player" src="images/Vinyl_Record_Player.png" alt="Vinyl Record Player" />
+</body>
+
+</html>
