@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Check-In Kiosk | Hannah Stortz</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="Hannah Stortz home">
+      <img src="images/logo.png" alt="">
+      <img src="images/hannah_stortz.svg" alt="Hannah Stortz">
+    </a>
+<button
+  class="menu-toggle"
+  type="button"
+  aria-label="Open navigation"
+  aria-expanded="false"
+  aria-controls="primary-nav"
+>
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+    <nav id="primary-nav" aria-label="Primary navigation">
+      <div class="work-dropdown">
+  <a
+  class="work-link work-toggle"
+  href="index.html#work"
+  aria-expanded="false"
+  aria-controls="work-menu"
+>
+  Work
+</a>
+
+  <div class="work-menu" id="work-menu" inert>
+    <p>Web Design</p>
+    <a href="project-page-coming.html">Emotional Microinteractions</a>
+    <a href="project-page-coming.html">Sunshine Cleaners</a>
+    <a href="flight-check-in.html">Flight Check-In Kiosk</a>
+    <a href="project-page-coming.html">LifeBridge Church</a>
+
+    <p>Graphic Design</p>
+    <a href="project-page-coming.html">Ultimate Frisbee Symbol</a>
+    <a href="project-page-coming.html">Ethnographic Parking Project</a>
+    <a href="project-page-coming.html">Social Justice Project</a>
+  </div>
+</div>
+      <a href="index.html#about">About</a>
+      <a class="button" href="mailto:hannah.stortz@outlook.com">
+        Contact
+      </a>
+    </nav>
+  </header>
+<main class="case-study" id="flight-page">
+    <section class="case-hero">
+      <div>
+        <h1>Flight Check-In Kiosk</h1>
+
+        <a
+          class="button prototype-link"
+          href="https://www.figma.com/proto/Cng8z10tWkLY4jdW2tx2XU/Final-Airplane-Kiosk?node-id=6049-82&amp;viewport=-1540%2C48%2C0.19&amp;t=BXoSDgbwfDqjCtTS-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=6049%3A79"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View the Interactive Prototype
+        </a>
+      </div>
+
+      <img
+        src="images/flight-check-in-kiosk-mockup.png"
+        alt="Flight check-in kiosk interface"
+      >
+    </section>
+
+    <section class="overview pale">
+      <div>
+        <h2>Project Overview</h2>
+
+        <p>
+          This three-week project aimed to design an interactive kiosk
+          aiding users in checking in for their flight, including steps
+          allowing them to adjust luggage and print their boarding pass.
+          This project included creating a user flow and conducting
+          user testing to improve user experience when interacting with
+          the interface.
+        </p>
+
+        <h2>Design Challenge</h2>
+
+        <p>
+          Create a kiosk that walks the user through the check-in
+          process while providing clear instructions on what to do
+          and where the user is in the process.
+        </p>
+      </div>
+
+      <img
+        src="images/select-check-in-method.png"
+        alt="Select a check-in method screen"
+      >
+    </section>
+
+    <div class="process-line">
+    <div class="process-track">
+    <span>
+      CHOOSE CHECK-IN METHOD → LOCATE RESERVATION → CONFIRM FLIGHT →
+      SELECT BAGGAGE → PRINT BOARDING PASS → CHECK-IN COMPLETE →
+    </span>
+
+    <span aria-hidden="true">
+      CHOOSE CHECK-IN METHOD → LOCATE RESERVATION → CONFIRM FLIGHT →
+      SELECT BAGGAGE → PRINT BOARDING PASS → CHECK-IN COMPLETE →
+    </span>
+  </div>
+</div>
+
+    <section class="approach">
+      <img
+        src="images/loading.png"
+        alt="Flight reservation loading screen"
+      >
+
+      <div>
+        <h2>Approach</h2>
+
+        <p>
+          This project began by listing out the specific steps my user
+          would need to take to check in for their flight at the airport:
+          locate the reservation, adjust luggage, and print their
+          boarding pass. This list guided me as I created a user flow,
+          outlining the subtasks within each step and the alternate
+          paths a user could take through the kiosk.
+        </p>
+
+        <p>
+          Then, I drew sketches and iterated through low-fidelity
+          prototypes. As I brought the design to mid-fidelity, I
+          conducted user testing and identified issues, including
+          adding clear instructions to tap to start over on the success
+          screen and text on the loading screen to clearly indicate
+          that the kiosk was loading the flight information.
+        </p>
+
+        <button
+          class="button"
+          id="open-flow"
+          type="button"
+          aria-haspopup="dialog"
+          aria-controls="flow-dialog"
+        >
+          View Full User Flow
+        </button>
+      </div>
+    </section>
+
+    <section class="gallery pale">
+      <h2>Explore More Screens</h2>
+
+      <div
+        class="gallery-track"
+        tabindex="0"
+        role="region"
+        aria-label="Flight kiosk screens"
+      >
+        <img src="images/flight-not-found.png" alt="Flight not found screen">
+        <img src="images/airline-agent.png" alt="Agent is on their way screen">
+        <img src="images/flight-found.png" alt="Flight found screen">
+        <img src="images/confirm-baggage.png" alt="Confirm baggage screen">
+        <img src="images/weigh-baggage.png" alt="Weigh baggage screen">
+        <img src="images/choose-to-print-boarding-pass.png" alt="Choose to print boarding pass screen">
+        <img src="images/boarding-pass-printing.png" alt="Boarding pass printing screen">
+        <img src="images/check-in-success.png" alt="Check-in success screen">
+      </div>
+    </section>
+
+    <section class="outcome">
+      <div class="brand-board">
+        <img src="images/project-colors.png" alt="Project color palette">
+        <img src="images/project-typography.png" alt="Project typography">
+        <img src="images/project-icons.png" alt="Project icon set">
+      </div>
+
+      <div>
+        <h2>Outcome</h2>
+
+        <p>
+          I created a high-fidelity kiosk prototype that incorporated
+          user-testing findings. Additionally, I prepared a
+          front-end/development handoff presentation and developer
+          notes that documented how to build the kiosk, including
+          empty, failed, and loading states.
+        </p>
+
+        <a
+          class="button prototype-link"
+          href="https://www.figma.com/proto/Cng8z10tWkLY4jdW2tx2XU/Final-Airplane-Kiosk?node-id=6049-82&amp;viewport=-1540%2C48%2C0.19&amp;t=BXoSDgbwfDqjCtTS-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=6049%3A79"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View the Interactive Prototype
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-main">
+      <div class="footer-pitch">
+        <a href="index.html">
+          <img src="images/full-logo.svg" alt="Hannah Stortz">
+        </a>
+
+        <p>
+          Let’s build something together. I’m currently looking for
+          new opportunities!
+        </p>
+
+        <div class="actions">
+          <a class="button light" href="mailto:hannah.stortz@outlook.com">
+            Contact
+          </a>
+
+          <a class="button" href="docs/Stortz_Hannah_Resume.pdf" download>
+            Download Resume
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-list">
+        <a href="tel:+15638445237">(563) 844-5237</a>
+
+        <a href="mailto:hannah.stortz@outlook.com">
+          hannah.stortz@outlook.com
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/hannahstortz/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <small>© 2026 Hannah Stortz. All rights reserved.</small>
+  </footer>
+
+  <dialog
+    class="lightbox"
+    id="flow-dialog"
+    aria-label="Full user flow"
+  >
+    <button
+      class="lightbox-close"
+      id="close-flow"
+      type="button"
+      aria-label="Close user flow"
+      autofocus
+    >
+      &times;
+    </button>
+
+    <img
+      src="images/airline-check-in-kiosk-user-flow.png"
+      alt="Full flight check-in user flow"
+    >
+  </dialog>
+</body>
+</html>

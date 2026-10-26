@@ -1,74 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinyl Groove</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hannah Stortz | Web Designer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="script.js" defer></script>
 </head>
 
-<body>
-    <div class="hero-img-background">
-        <div class="find-your-groove">
-            <p>Find Your Groove</p>
-        </div>
-        <div class="main-content">
-            <header>
-                <nav>
-                    <h1>
-                        <a href="index.html">
-                            <img class="logo" src="images/Vinyl-Groove.png" alt="Vinyl Groove" />
-                        </a>
-                    </h1>
-                    <label class="hamburger-menu">
-                        <input type="checkbox" />
-                    </label>
-                    <ul class="nav-links">
-                        <li><a href="index.html">New Arrivals</a></li>
-                        <li><a href="">Featured</a></li>
-                        <li><a href="">Artists</a></li>
-                        <li><a href="">Sale</a></li>
-                        <li><button data-modal-target="#modal" class="btn nav-btn hidden-on-desktop">Shop Records</button></li>
-                    </ul>
-                    <ul class="right-buttons">
-                        <li><button data-modal-target="#modal" class="btn nav-btn hidden-on-mobile">Shop Records</button></li>
-                        <li><a href=""><img src="images/Shopping_Bag.png" alt="Shopping Bag" class="shopping-bag" /></a></li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
-                <section id="hero">
-                    <div class="hero-content">
-                        <h2>Listen</h2>
-                        <p>Find your next favorite record at Vinyl Groove, from timeless classics to fresh discoveries.
-                            Drop the needle, turn it up, and settle into the sound.</p>
-                        <button data-modal-target="#modal" class="btn">Shop Records</button>
-                    </div>
-                </section>
-                <div class="modal" id="modal">
-                    <div class="modal-content">
-                        <button data-close-button class="close-button">&times;</button>
-                        <div class="title-top">Buy One Record,</div>
-                        <div class="title-bottom">Get One Free</div>
-                        <div class="modal-body">
-                            Double the vinyl, double the groove! Pick your favorites and give your collection a fresh
-                            spin.
-                        </div>
-                        <button class="modal-btn">Shop the Sale</button>
-                    </div>
-                </div>
-                <img id="modal-record" src="images/Modal_Record.png" alt="Vinyl Record" />
-                <div id="overlay"></div>
-            </main>
-        </div>
-        <div class="take-it-for-a-spin">
-                <p>Take it for a Spin</p>
-        </div>
-    </div>
-    <img class="record" src="images/Vinyl_Record.png" alt="Vinyl Record" />
-    <img class="record-player" src="images/Vinyl_Record_Player.png" alt="Vinyl Record Player" />
-</body>
+<body class="home">
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="Hannah Stortz home">
+      <img src="images/logo.png" alt="">
+      <img src="images/hannah_stortz.svg" alt="Hannah Stortz">
+    </a>
+<button
+  class="menu-toggle"
+  type="button"
+  aria-label="Open navigation"
+  aria-expanded="false"
+  aria-controls="primary-nav"
+>
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+    <nav id="primary-nav" aria-label="Primary navigation">
+      <div class="work-dropdown">
+  <a
+  class="work-link work-toggle"
+  href="index.html#work"
+  aria-expanded="false"
+  aria-controls="work-menu"
+>
+  Work
+</a>
 
+  <div class="work-menu" id="work-menu" inert>
+    <p>Web Design</p>
+    <a href="project-page-coming.html">Emotional Microinteractions</a>
+    <a href="project-page-coming.html">Sunshine Cleaners</a>
+    <a href="flight-check-in.html">Flight Check-In Kiosk</a>
+    <a href="project-page-coming.html">LifeBridge Church</a>
+
+    <p>Graphic Design</p>
+    <a href="project-page-coming.html">Ultimate Frisbee Symbol</a>
+    <a href="project-page-coming.html">Ethnographic Parking Project</a>
+    <a href="project-page-coming.html">Social Justice Project</a>
+  </div>
+</div>
+      <a href="index.html#about">About</a>
+      <a class="button" href="mailto:hannah.stortz@outlook.com">
+        Contact
+      </a>
+    </nav>
+  </header>
+
+  <main id="home-page">
+    <section class="hero">
+      <img class="flower flower-left" src="images/flowers-left.png" alt="">
+      <img class="flower flower-right" src="images/flowers-right.png" alt="">
+
+      <div class="hero-title">
+        <h1>
+          <img src="images/hannah_stortz.svg" alt="Hannah Stortz">
+        </h1>
+        <p>WEB DESIGNER</p>
+      </div>
+    </section>
+
+    <section class="work-grid" id="work" aria-label="Selected work">
+      <a
+        class="project-card"
+        href="index.html?project=emotional-microinteractions"
+      >
+        <img src="images/emotional-microinteractions.png" alt="">
+        <span>
+          <strong>Emotional Microinteractions</strong>
+          <small>Fall 2026</small>
+        </span>
+      </a>
+
+      <a
+        class="project-card"
+        href="flight-check-in.html"
+      >
+        <img src="images/flight-check-in.png" alt="">
+        <span>
+          <strong>Flight Check-In Kiosk</strong>
+          <small>Fall 2026</small>
+        </span>
+      </a>
+
+      <a
+        class="project-card"
+        href="index.html?project=sunshine-cleaners"
+      >
+        <img src="images/sunshine-cleaners.png" alt="">
+        <span>
+          <strong>Sunshine Cleaners</strong>
+          <small>Fall 2026</small>
+        </span>
+      </a>
+
+      <a
+        class="project-card"
+        href="index.html?project=lifebridge-church"
+      >
+        <img src="images/lifebridge-church.png" alt="">
+        <span>
+          <strong>LifeBridge Church</strong>
+          <small>Fall 2026</small>
+        </span>
+      </a>
+
+      <a
+        class="project-card"
+        href="index.html?project=ultimate-frisbee-symbol"
+      >
+        <img src="images/ultimate-frisbee-symbol.png" alt="">
+        <span>
+          <strong>Ultimate Frisbee Symbol</strong>
+          <small>Spring 2026</small>
+        </span>
+      </a>
+
+      <a
+        class="project-card"
+        href="index.html?project=ethnographic-parking"
+      >
+        <img src="images/ethnographic-parking.png" alt="">
+        <span>
+          <strong>Ethnographic Parking Project</strong>
+          <small>Fall 2025</small>
+        </span>
+      </a>
+
+      <a
+        class="project-card"
+        href="index.html?project=social-justice"
+      >
+        <img src="images/social-justice.png" alt="">
+        <span>
+          <strong>Social Justice Project</strong>
+          <small>Fall 2024</small>
+        </span>
+      </a>
+    </section>
+
+    <section class="about" id="about">
+      <img
+        src="images/photo-of-hannah-stortz.png"
+        alt="Hannah Stortz sitting outside beside a garden"
+      >
+
+      <div>
+        <h2>A Little About Me</h2>
+
+        <p>
+          Currently, I am a senior web design student who loves using
+          research to understand a problem and creating designs that
+          address specific user needs. From a young age, I had a deep
+          passion for art, which led me to begin taking college classes
+          on graphic design in high school. During my junior year of
+          high school, I took an HTML/CSS class. That experience sparked
+          my interest in web design, and I began teaching myself React
+          and Figma.
+        </p>
+
+        <p>
+          Recently, I worked on a redesign project for a church near my
+          hometown. Through user testing, surveys, and other research
+          methods, I sought to understand why the navigation and page
+          structure were confusing. Ultimately, I redesigned both the
+          structure and aesthetics of the site, and follow-up user
+          testing showed a 75% average reduction in task completion
+          time. I’d love to connect!
+        </p>
+
+        <a class="button" href="docs/Stortz_Hannah_Resume.pdf" download>
+          Download Resume
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main">
+      <div class="footer-pitch">
+        <a href="index.html">
+          <img src="images/full-logo.svg" alt="Hannah Stortz">
+        </a>
+
+        <p>
+          Let’s build something together. I’m currently looking for
+          new opportunities!
+        </p>
+
+        <div class="actions">
+          <a class="button light" href="mailto:hannah.stortz@outlook.com">
+            Contact
+          </a>
+
+          <a class="button" href="docs/Stortz_Hannah_Resume.pdf" download>
+            Download Resume
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-list">
+        <a href="tel:+15638445237">(563) 844-5237</a>
+
+        <a href="mailto:hannah.stortz@outlook.com">
+          hannah.stortz@outlook.com
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/hannahstortz/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <small>© 2026 Hannah Stortz. All rights reserved.</small>
+  </footer>
+</body>
 </html>
