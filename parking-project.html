@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hannah Stortz | Web Designer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="Hannah Stortz home">
+      <img src="images/logo.png" alt="">
+      <img src="images/hannah_stortz.svg" alt="Hannah Stortz">
+    </a>
+<button
+  class="menu-toggle"
+  type="button"
+  aria-label="Open navigation"
+  aria-expanded="false"
+  aria-controls="primary-nav"
+>
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+    <nav id="primary-nav" aria-label="Primary navigation">
+      <div class="work-dropdown">
+  <a
+  class="work-link work-toggle"
+  href="index.html#work"
+  aria-expanded="false"
+  aria-controls="work-menu"
+>
+  Work
+</a>
+
+  <div class="work-menu" id="work-menu" inert>
+    <p>Web Design</p>
+    <a href="emotional-microinteractions.html">Emotional Microinteractions</a>
+    <a href="sunshine-cleaners.html">Sunshine Cleaners</a>
+    <a href="flight-check-in.html">Flight Check-In Kiosk</a>
+    <a href="lifebridge-church.html">LifeBridge Church</a>
+
+    <p>Graphic Design</p>
+    <a href="ultimate-frisbee.html">Ultimate Frisbee Symbol</a>
+    <a href="parking-project.html">Ethnographic Parking Project</a>
+    <a href="social-justice.html">Social Justice Project</a>
+  </div>
+</div>
+      <a href="index.html#about">About</a>
+      <a class="button" href="mailto:hannah.stortz@outlook.com">
+        Contact
+      </a>
+    </nav>
+  </header>
+
+<main class="case-study parking">
+  <section class="case-hero">
+    <img
+    class="image-shadow"
+      src="images/Ethnographic Poster.png"
+      alt="Printed Parking Selection concept poster"
+    >
+
+    <div>
+      <h1>Ethnographic<br />Parking Project</h1>
+    </div>
+  </section>
+
+  <section class="parking-row pale">
+    <div>
+      <h2>Project Overview</h2>
+
+      <p>
+        For this ethnographic group project, we considered the issue
+        of on-campus parking at Cedarville University. Through
+        interviews, a student survey, observations, and other research
+        methods, we sought to understand the frustrations of both
+        residential students and commuters and develop a solution
+        based on their needs.
+      </p>
+
+      <h2>Design Challenge</h2>
+
+      <p>
+        Our research revealed that mindset, distance, and fairness
+        were recurring issues. In our survey, 67% of students reported
+        difficulty finding parking nearest to their dorm, and 72%
+        believed parking spots were not fairly allocated across dorms.
+        While some interviewees pointed to students’ expectations of
+        close parking, we also found that students with clinicals or
+        off-campus jobs had important reasons to need their cars
+        nearby. The challenge was to address these different needs
+        while making it clear where students could park.
+      </p>
+    </div>
+
+    <img
+      class="parking-photo"
+      src="images/parking-lot.png"
+      alt="Campus parking lot at sunset"
+      loading="lazy"
+    >
+  </section>
+
+  <section class="parking-row parking-approach">
+    <img
+      src="images/presentation-slides.png"
+      alt="Research slides summarizing the Resident Director interview and parking strategies used by theme parks"
+      loading="lazy"
+    >
+
+    <div>
+      <h2>Approach</h2>
+
+      <p>
+        We began by interviewing students, a Resident Assistant, a
+        Resident Director, and Campus Security to gain a range of
+        perspectives. I interviewed the Resident Director, created
+        the student survey, and developed a problem map to explore
+        who, what, when, where, why, and how. Comparing parking spaces
+        with the number of residents also helped us understand how
+        uneven parking availability was across dorms.
+      </p>
+
+      <p>
+        As a group, we used observations, experience diagrams,
+        stakeholder mapping, and persona profiles to better
+        understand students’ needs. We also considered how theme
+        parks, airports, and tech campuses address parking before
+        using round robin to generate potential solutions.
+      </p>
+
+      <button
+        class="button"
+        id="open-flow"
+        type="button"
+        aria-haspopup="dialog"
+        aria-controls="flow-dialog"
+      >
+        View the Problem Map
+      </button>
+    </div>
+  </section>
+
+  <section class="parking-row pale parking-outcome">
+    <div>
+      <h2>Outcome</h2>
+
+      <p>
+        Ultimately, we selected a system that would prioritize parking
+        based on how frequently students need their cars, with
+        upperclassmen choosing first among students with similar
+        usage. We created a storyboard explaining how students would
+        apply, receive a selection date, and choose a reserved spot
+        on a campus map.
+      </p>
+
+      <p>
+        I then designed the concept poster to explain the solution
+        and the steps students would take. The proposed system aimed
+        to clarify parking expectations, reduce the need for
+        residential students to use commuter spaces, and reduce
+        traffic from searching for open spots.
+      </p>
+    </div>
+
+    <img
+      src="images/parking-poster.png"
+      alt="Parking Selection concept: complete a priority application, receive a selection date, and park in an assigned numbered spot"
+      loading="lazy"
+    >
+  </section>
+
+  <dialog
+    class="lightbox"
+    id="flow-dialog"
+    aria-label="Parking research problem map"
+  >
+    <button
+      class="lightbox-close"
+      id="close-flow"
+      type="button"
+      aria-label="Close problem map"
+      autofocus
+    >
+      <svg
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        aria-hidden="true"
+      >
+        <path d="M6 6 18 18 M18 6 6 18" />
+      </svg>
+    </button>
+
+    <img
+      src="images/Problem_Map.png"
+      alt="Problem map organizing campus parking research into who, what, when, where, why, and how"
+      loading="lazy"
+    >
+  </dialog>
+</main>
+
+  <footer>
+    <div class="footer-main">
+      <div class="footer-pitch">
+        <a href="index.html">
+          <img src="images/full-logo.svg" alt="Hannah Stortz">
+        </a>
+
+        <p>
+          Let’s build something together. I’m currently looking for
+          new opportunities!
+        </p>
+
+        <div class="actions">
+          <a class="button light" href="mailto:hannah.stortz@outlook.com">
+            Contact
+          </a>
+
+          <a class="button" href="docs/Stortz_Hannah_Resume.pdf" download>
+            Download Resume
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-list">
+        <a href="tel:+15638445237">(563) 844-5237</a>
+
+        <a href="mailto:hannah.stortz@outlook.com">
+          hannah.stortz@outlook.com
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/hannahstortz/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <small>© 2026 Hannah Stortz. All rights reserved.</small>
+  </footer>
+</body>
+</html>

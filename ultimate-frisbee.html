@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hannah Stortz | Web Designer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="Hannah Stortz home">
+      <img src="images/logo.png" alt="">
+      <img src="images/hannah_stortz.svg" alt="Hannah Stortz">
+    </a>
+<button
+  class="menu-toggle"
+  type="button"
+  aria-label="Open navigation"
+  aria-expanded="false"
+  aria-controls="primary-nav"
+>
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+    <nav id="primary-nav" aria-label="Primary navigation">
+      <div class="work-dropdown">
+  <a
+  class="work-link work-toggle"
+  href="index.html#work"
+  aria-expanded="false"
+  aria-controls="work-menu"
+>
+  Work
+</a>
+
+  <div class="work-menu" id="work-menu" inert>
+    <p>Web Design</p>
+    <a href="emotional-microinteractions.html">Emotional Microinteractions</a>
+    <a href="sunshine-cleaners.html">Sunshine Cleaners</a>
+    <a href="flight-check-in.html">Flight Check-In Kiosk</a>
+    <a href="lifebridge-church.html">LifeBridge Church</a>
+
+    <p>Graphic Design</p>
+    <a href="ultimate-frisbee.html">Ultimate Frisbee Symbol</a>
+    <a href="parking-project.html">Ethnographic Parking Project</a>
+    <a href="social-justice.html">Social Justice Project</a>
+  </div>
+</div>
+      <a href="index.html#about">About</a>
+      <a class="button" href="mailto:hannah.stortz@outlook.com">
+        Contact
+      </a>
+    </nav>
+  </header>
+
+  <main class="case-study frisbee">
+  <section class="case-hero">
+    <img
+      src="images/Ultimate_Symbol.png"
+      alt="Ultimate Frisbee symbol showing a person reaching to catch a disc"
+    >
+
+    <div>
+      <h1>Ultimate Frisbee Symbol</h1>
+    </div>
+  </section>
+
+  <section class="uf-row pale">
+    <div>
+      <h2>Project Overview</h2>
+
+      <p>
+        This project aimed to practice symbol creation by finding
+        and researching an existing symbol system and then creating
+        a new symbol for the system. I chose to create an ultimate
+        frisbee symbol for Apple Fitness, working through an
+        iterative process before integrating it into the original set.
+      </p>
+
+      <h2>Design Challenge</h2>
+
+      <p>
+        The challenge was to identify the symbol as ultimate frisbee
+        when there are many other frisbee sports, while ensuring
+        consistency with the original symbol set. This required
+        attention to proportions, stroke weight, negative space,
+        and a pose that felt dynamic and natural.
+      </p>
+    </div>
+
+    <img
+      class="book-shadow"
+      src="images/Symbol Process Booklet - Summary Page.png"
+      alt="Open process booklet introducing the research, iteration, and integration stages"
+      loading="lazy"
+    >
+  </section>
+
+  <section class="uf-row uf-approach">
+    <img
+      src="images/Symbol_Sketches.png"
+      alt="Six sketches exploring different throwing and catching poses"
+      loading="lazy"
+    >
+
+    <div>
+      <h2>Approach</h2>
+
+      <p>
+        I began by analyzing the original symbols and researching
+        real-life images before creating sketches. Critiques
+        centered around two main ideas: properly identifying the
+        activity as ultimate frisbee and maintaining consistent
+        proportions.
+      </p>
+
+      <p>
+        I chose to focus on catching rather than throwing and
+        refined the head size, arm and leg proportions, and curves
+        of the hands and feet. I then developed digital comps,
+        using feedback to make the pose more dynamic and natural
+        and move the frisbee farther from the hand so it would
+        still read at small sizes.
+      </p>
+    </div>
+  </section>
+
+  <section class="uf-row pale uf-outcome">
+    <div>
+      <h2>Outcome</h2>
+
+      <p>
+        The final symbol incorporated a more dynamic pose,
+        increased space between the hand and frisbee, and a head
+        position based on the original symbols. I also adjusted
+        the green color and added a background gradient before
+        placing the ultimate frisbee symbol into the original set.
+      </p>
+    </div>
+
+    <img
+      class="book-shadow"
+      src="images/Symbol_Process_Booklet_Cover.png"
+      alt="Printed Apple Fitness symbol creation process booklet"
+      loading="lazy"
+    >
+  </section>
+
+  <section class="gallery">
+    <h2>Explore the Process Booklet</h2>
+
+    <div
+      class="gallery-track"
+      tabindex="0"
+      role="region"
+      aria-label="Scroll horizontally to explore the symbol process booklet"
+    >
+      <img
+        src="images/overview.png"
+        alt="Booklet overview introducing research, iteration, and integration"
+        loading="lazy"
+      >
+
+      <img
+        src="images/research.png"
+        alt="Analysis of the existing symbols’ proportions, stroke weights, and movement"
+        loading="lazy"
+      >
+
+      <img
+        src="images/iteration-sketches.png"
+        alt="Initial symbol sketches with critique notes"
+        loading="lazy"
+      >
+
+      <img
+        src="images/iteration-roughs.png"
+        alt="Digital symbol variations and annotated final refinements"
+        loading="lazy"
+      >
+
+      <img
+        src="images/integration.png"
+        alt="Final Ultimate Frisbee symbol integrated into the existing activity symbol set"
+        loading="lazy"
+      >
+    </div>
+  </section>
+</main>
+
+  <footer>
+    <div class="footer-main">
+      <div class="footer-pitch">
+        <a href="index.html">
+          <img src="images/full-logo.svg" alt="Hannah Stortz">
+        </a>
+
+        <p>
+          Let’s build something together. I’m currently looking for
+          new opportunities!
+        </p>
+
+        <div class="actions">
+          <a class="button light" href="mailto:hannah.stortz@outlook.com">
+            Contact
+          </a>
+
+          <a class="button" href="docs/Stortz_Hannah_Resume.pdf" download>
+            Download Resume
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-list">
+        <a href="tel:+15638445237">(563) 844-5237</a>
+
+        <a href="mailto:hannah.stortz@outlook.com">
+          hannah.stortz@outlook.com
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/hannahstortz/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <small>© 2026 Hannah Stortz. All rights reserved.</small>
+  </footer>
+</body>
+</html>

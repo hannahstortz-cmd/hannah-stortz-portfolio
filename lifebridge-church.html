@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hannah Stortz | Web Designer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="Hannah Stortz home">
+      <img src="images/logo.png" alt="">
+      <img src="images/hannah_stortz.svg" alt="Hannah Stortz">
+    </a>
+<button
+  class="menu-toggle"
+  type="button"
+  aria-label="Open navigation"
+  aria-expanded="false"
+  aria-controls="primary-nav"
+>
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+    <nav id="primary-nav" aria-label="Primary navigation">
+      <div class="work-dropdown">
+  <a
+  class="work-link work-toggle"
+  href="index.html#work"
+  aria-expanded="false"
+  aria-controls="work-menu"
+>
+  Work
+</a>
+
+  <div class="work-menu" id="work-menu" inert>
+    <p>Web Design</p>
+    <a href="emotional-microinteractions.html">Emotional Microinteractions</a>
+    <a href="sunshine-cleaners.html">Sunshine Cleaners</a>
+    <a href="flight-check-in.html">Flight Check-In Kiosk</a>
+    <a href="lifebridge-church.html">LifeBridge Church</a>
+
+    <p>Graphic Design</p>
+    <a href="ultimate-frisbee.html">Ultimate Frisbee Symbol</a>
+    <a href="parking-project.html">Ethnographic Parking Project</a>
+    <a href="social-justice.html">Social Justice Project</a>
+  </div>
+</div>
+      <a href="index.html#about">About</a>
+      <a class="button" href="mailto:hannah.stortz@outlook.com">
+        Contact
+      </a>
+    </nav>
+  </header>
+
+<main class="case-study lifebridge">
+  <section class="case-hero">
+    <div>
+      <h1>LifeBridge Church</h1>
+
+      <a
+        class="button"
+        href="https://www.figma.com/proto/Fm3TvnrHqKeiR7nwxT4b1D/Portfolio-Website?node-id=266-549&amp;viewport=-1827%2C413%2C0.26&amp;t=3BxkKtltqBIsPqPJ-1&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;starting-point-node-id=1%3A3&amp;page-id=0%3A1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View the Desktop Prototype
+      </a>
+    </div>
+
+    <img
+      src="images/LifeBridge_Home_Mockup.png"
+      alt="Redesigned LifeBridge Church homepage displayed on a laptop"
+    >
+  </section>
+
+  <section class="lb-row pale">
+    <div class="comparison">
+      <div class="comparison-images" style="--split: 50%;">
+        <img
+          src="images/LifeBridge_Home_Mockup.png"
+          alt="After: redesigned homepage with clearer navigation and a Plan Your Visit button"
+          loading="lazy"
+        >
+
+        <img
+          class="comparison-before"
+          src="images/LifeBridge_Before_Mockup.png"
+          alt="Before: original LifeBridge Church homepage"
+          loading="lazy"
+        >
+
+        <span class="comparison-divider" aria-hidden="true">
+          <span><svg
+      width="28"
+      height="28"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path d="m8 7-5 5 5 5" />
+      <path d="m16 7 5 5-5 5" />
+    </svg></span>
+        </span>
+
+        <input
+          class="comparison-slider"
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          aria-label="Compare original and redesigned homepages"
+          aria-valuetext="Original homepage occupies 50 percent"
+        >
+      </div>
+    </div>
+
+    <div>
+      <h2>Project Overview</h2>
+
+      <p>
+        This exploratory project focused on redesigning the LifeBridge
+        Church website to make important information easier to find.
+        When I first visited the website, I noticed some usability
+        issues with the navigation and page structure. Although the
+        church did not hire me, I sought to address those issues
+        through a navigation, homepage, and giving page redesign and
+        by creating a new “What to Expect” page.
+      </p>
+
+      <h2>Design Challenge</h2>
+
+      <p>
+        People considering visiting the church struggled to find
+        service times, ministries, giving options, and sermon
+        information on the homepage and in the navigation. Many
+        navigation labels were generic, which meant users often had
+        to try multiple dropdowns before finding the information
+        they wanted.
+      </p>
+    </div>
+  </section>
+
+  <div class="process-line">
+    <div class="process-track">
+      <span>
+        HOW MIGHT WE IMPROVE NAVIGATION AND HOMEPAGE FLOW TO HELP USERS
+        FIND THE INFORMATION THEY’RE LOOKING FOR MORE QUICKLY?
+      </span>
+
+      <span aria-hidden="true">
+        HOW MIGHT WE IMPROVE NAVIGATION AND HOMEPAGE FLOW TO HELP USERS
+        FIND THE INFORMATION THEY’RE LOOKING FOR MORE QUICKLY?
+      </span>
+    </div>
+  </div>
+
+  <section class="lb-row lb-research">
+    <div>
+      <h2>Research &amp; Findings</h2>
+
+      <p>
+        I began with user testing of the existing website and a user
+        survey to understand how people use church websites and what
+        information they need. The initial testing included both
+        users of various ages and genders. These findings produced a few key takeaways.
+    </p>
+
+      <ul>
+        <li>
+          Navigation labels were too general. Users often tried
+          several dropdowns before finding the link they wanted.
+        </li>
+        <li>
+          The giving page created confusion. It began with information
+          about why we give, which led some users to question whether
+          they could actually give through the church.
+        </li>
+        <li>
+          Current members wanted to find upcoming events. The website
+          needed to support people already attending the church as
+          well as potential visitors.
+        </li>
+        <li>
+          Many respondents preferred giving in person. This pointed
+          to the importance of explaining multiple ways to give
+          rather than focusing only on online giving.
+        </li>
+      </ul>
+    </div>
+
+    <img
+      src="images/user-testing.png"
+      alt="A participant exploring the church website during a user-testing session"
+      loading="lazy"
+    >
+  </section>
+
+  <section class="lb-row pale lb-direction">
+    <img
+      src="images/data-analysis.png"
+      alt="Two research personas alongside affinity mapping and an importance-versus-urgency matrix"
+      loading="lazy"
+    >
+
+    <div>
+      <h2>Defining the Direction</h2>
+
+      <p>
+        With that research in mind, I created user personas, an
+        affinity map, and a two-by-two matrix to help narrow in on
+        a solution.
+      </p>
+
+      <p>
+        The personas represented two types of people likely to visit
+        a church website, based on my survey findings. The first was
+        a young mom looking for ways to connect with other moms and
+        access information about the church both online and in person.
+        The second was an older gentleman who wanted to get involved
+        in the community and connect face-to-face with people of
+        different ages and life stages.
+      </p>
+
+      <p>
+        I also grouped my research findings into an affinity map,
+        which helped identify navigation, giving, and ministries as
+        major pain points. Finally, I used a two-by-two matrix to
+        prioritize potential changes, keeping my focus on the
+        navigation and homepage.
+      </p>
+    </div>
+  </section>
+
+  <section class="lb-row lb-explorations">
+    <div>
+      <h2>Explorations &amp; Testing</h2>
+
+      <p>
+        Using this research as a starting point, I began sketching
+        ideas and refined them into a paper prototype. I then tested
+        the prototype with users to see whether the updated structure
+        helped them find information.
+      </p>
+
+      <p>
+        This testing revealed that I needed to add a “What to Expect”
+        page under the About dropdown and a link to serving
+        opportunities under Ministries. I also learned that calls
+        to action and information about when and where services take
+        place were easily overlooked. With that feedback in mind,
+        I used color and hierarchy to help those details stand out.
+      </p>
+
+      <p>
+        I then brought the designs into Figma, working through
+        mid- and high-fidelity prototypes to develop the final design.
+      </p>
+    </div>
+
+    <img
+      src="images/sketches-and-explorations.png"
+      alt="Paper sketches exploring the homepage and What to Expect page"
+      loading="lazy"
+    >
+  </section>
+
+  <section class="lb-row pale lb-outcome">
+    <img
+      src="images/LifeBridge_Home_Mockup.png"
+      alt="Final LifeBridge Church homepage redesign"
+      loading="lazy"
+    >
+
+    <div>
+      <h2>Outcome</h2>
+
+      <p>
+        With the final prototype complete, I conducted a final round
+        of user testing to see whether the changes helped.
+        Participants found information more quickly and felt more
+        confident choosing which dropdown to look under.
+      </p>
+
+      <p>
+        Throughout the project, testing helped me identify information
+        and navigation needs I had not initially considered. These
+        findings guided the design from the first sketches through
+        the final prototype, helping me make decisions based on how
+        people actually looked for information.
+      </p>
+
+      <a
+        class="button"
+        href="https://www.figma.com/proto/Fm3TvnrHqKeiR7nwxT4b1D/Portfolio-Website?node-id=266-549&amp;viewport=-1827%2C413%2C0.26&amp;t=3BxkKtltqBIsPqPJ-1&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;starting-point-node-id=1%3A3&amp;page-id=0%3A1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View the Desktop Prototype
+      </a>
+    </div>
+  </section>
+</main>
+
+  <footer>
+    <div class="footer-main">
+      <div class="footer-pitch">
+        <a href="index.html">
+          <img src="images/full-logo.svg" alt="Hannah Stortz">
+        </a>
+
+        <p>
+          Let’s build something together. I’m currently looking for
+          new opportunities!
+        </p>
+
+        <div class="actions">
+          <a class="button light" href="mailto:hannah.stortz@outlook.com">
+            Contact
+          </a>
+
+          <a class="button" href="docs/Stortz_Hannah_Resume.pdf" download>
+            Download Resume
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-list">
+        <a href="tel:+15638445237">(563) 844-5237</a>
+
+        <a href="mailto:hannah.stortz@outlook.com">
+          hannah.stortz@outlook.com
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/hannahstortz/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <small>© 2026 Hannah Stortz. All rights reserved.</small>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emotional Microinteractions | Hannah Stortz</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="Hannah Stortz home">
+      <img src="images/logo.png" alt="">
+      <img src="images/hannah_stortz.svg" alt="Hannah Stortz">
+    </a>
+<button
+  class="menu-toggle"
+  type="button"
+  aria-label="Open navigation"
+  aria-expanded="false"
+  aria-controls="primary-nav"
+>
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+    <nav id="primary-nav" aria-label="Primary navigation">
+      <div class="work-dropdown">
+  <a
+  class="work-link work-toggle"
+  href="index.html#work"
+  aria-expanded="false"
+  aria-controls="work-menu"
+>
+  Work
+</a>
+
+  <div class="work-menu" id="work-menu" inert>
+    <p>Web Design</p>
+    <a href="emotional-microinteractions.html">Emotional Microinteractions</a>
+    <a href="sunshine-cleaners.html">Sunshine Cleaners</a>
+    <a href="flight-check-in.html">Flight Check-In Kiosk</a>
+    <a href="lifebridge-church.html">LifeBridge Church</a>
+
+    <p>Graphic Design</p>
+    <a href="ultimate-frisbee.html">Ultimate Frisbee Symbol</a>
+    <a href="parking-project.html">Ethnographic Parking Project</a>
+    <a href="social-justice.html">Social Justice Project</a>
+  </div>
+</div>
+      <a href="index.html#about">About</a>
+      <a class="button" href="mailto:hannah.stortz@outlook.com">
+        Contact
+      </a>
+    </nav>
+  </header>
+
+  <main class="case-study microinteractions">
+  <section class="case-hero">
+    <div>
+      <h1>Emotional Microinteractions</h1>
+
+      <div class="prototype-actions">
+        <a
+          class="button"
+          href="https://www.figma.com/proto/ZKZPjInsAypnQvRnd8z3Kq/Emotional-Design-Microinteractions-Final?node-id=131-262&amp;viewport=380%2C25%2C0.19&amp;t=CTghF8wAGr1Q8PQk-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=1%3A4&amp;page-id=0%3A1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Flashcard Interaction
+        </a>
+
+        <a class="button button-pale" href="https://www.figma.com/proto/ZKZPjInsAypnQvRnd8z3Kq/Emotional-Design-Microinteractions-Final?node-id=1-4&amp;viewport=380%2C25%2C0.19&amp;t=0gpPmKrwsvd2stJT-1&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;starting-point-node-id=1%3A4&amp;page-id=0%3A1" target="_blank" rel="noopener noreferrer" >
+          To-Do List Interaction
+        </a>
+      </div>
+    </div>
+
+    <img
+    class="case-hero-image"
+    src="images/Emotional_Microinteractions_Hero.png"
+      alt="Flashcard website and to-do list app mockups"
+    >
+  </section>
+
+  <section class="overview pale">
+    <div>
+      <h2>Project Overview</h2>
+
+      <p>
+        This two-week project aimed to create a flashcard page that
+        evoked a negative emotion and a to-do list app that evoked a
+        positive emotion for the user.
+      </p>
+
+      <h2>Design Challenge</h2>
+
+      <p>
+        The challenge was to communicate an error without discouraging
+        the user and make a successful action feel rewarding. Each
+        interaction needed clear feedback that supported the user’s
+        next step.
+      </p>
+    </div>
+
+    <div class="interaction-pair">
+        <img
+          src="images/Negative-start.png"
+          alt="Flashcard with an answer entered before checking it"
+          loading="lazy"
+        >
+        <img
+          src="images/Positive-start.png"
+          alt="To-do list with one task remaining"
+          loading="lazy"
+        >
+    </div>
+  </section>
+
+  <section class="approach">
+    <div class="interaction-pair sketch-pair">
+        <img
+          src="images/Flashcard_Microinteraction_Sketch.png"
+          alt="Flashcard sketch exploring a red error outline and encouraging feedback"
+          loading="lazy"
+        >
+        <img
+          src="images/To_Do_List_Microinteraction_Sketch.png"
+          alt="To-do list sketch exploring a sun and a message encouraging the user to take a break"
+          loading="lazy"
+        >
+    </div>
+
+    <div>
+      <h2>Approach</h2>
+
+      <p>
+        I began by considering a few different types of emotions I
+        could convey and how. After deciding on my goal emotions and
+        choosing to create a flashcard website and to-do list app, I
+        made a few sketches to start fleshing out my ideas.
+      </p>
+
+      <p>
+        Using those sketches as a reference, I brought the designs
+        into Figma and added interactions, letting colors, sounds,
+        and animations help evoke the emotions.
+      </p>
+    </div>
+  </section>
+
+  <section class="outcome pale">
+    <div class="interaction-pair">
+      <img
+        src="images/Negative-end.png"
+        alt="Incorrect flashcard answer outlined in red, with encouragement and a Try Again button"
+        loading="lazy"
+      >
+      <img
+        src="images/Positive-end.png"
+        alt="Task completion popup featuring a sun and a message encouraging the user to take a break"
+        loading="lazy"
+      >
+    </div>
+
+    <div>
+      <h2>Outcome</h2>
+
+      <p>
+        The flashcard interaction was designed to evoke the negative
+        emotion of incorrectly answering a flashcard question through
+        the red text box and shaking animation, while providing a
+        positive association using the encouraging text and option
+        to try again.
+      </p>
+
+      <p>
+        For the positive interaction, both the spinning sun and
+        positive jingle worked together to convey the positive
+        emotion of completing all the tasks on the user’s to-do list.
+      </p>
+    </div>
+  </section>
+</main>
+
+  <footer>
+    <div class="footer-main">
+      <div class="footer-pitch">
+        <a href="index.html">
+          <img src="images/full-logo.svg" alt="Hannah Stortz">
+        </a>
+
+        <p>
+          Let’s build something together. I’m currently looking for
+          new opportunities!
+        </p>
+
+        <div class="actions">
+          <a class="button light" href="mailto:hannah.stortz@outlook.com">
+            Contact
+          </a>
+
+          <a class="button" href="docs/Stortz_Hannah_Resume.pdf" download>
+            Download Resume
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-list">
+        <a href="tel:+15638445237">(563) 844-5237</a>
+
+        <a href="mailto:hannah.stortz@outlook.com">
+          hannah.stortz@outlook.com
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/hannahstortz/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <small>© 2026 Hannah Stortz. All rights reserved.</small>
+  </footer>
+</body>
+</html>

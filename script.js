@@ -202,3 +202,23 @@ if (menuToggle && primaryNav) {
     }
   });
 }
+
+// BEFORE-AND-AFTER COMPARISONS
+document.querySelectorAll(".comparison-slider").forEach((slider) => {
+  const images = slider.closest(".comparison-images");
+
+   function updateComparison() {
+  const screenPosition = 9 + (Number(slider.value) / 100) * 82;
+
+  images.style.setProperty("--split", `${screenPosition}%`);
+  images.style.setProperty("--divider", `${screenPosition}%`);
+
+  slider.setAttribute(
+    "aria-valuetext",
+    `Original homepage occupies ${slider.value} percent of the screen`
+  );
+}
+
+  slider.addEventListener("input", updateComparison);
+  updateComparison();
+});
