@@ -204,21 +204,66 @@ if (menuToggle && primaryNav) {
 }
 
 // BEFORE-AND-AFTER COMPARISONS
-document.querySelectorAll(".comparison-slider").forEach((slider) => {
-  const images = slider.closest(".comparison-images");
+document.querySelectorAll(".comparison").forEach((comparison) => {
+  const images = comparison.querySelector(".comparison-images");
+  const slider = comparison.querySelector(".comparison-slider");
 
-   function updateComparison() {
-  const screenPosition = 9 + (Number(slider.value) / 100) * 82;
+  if (!images || !slider) return;
 
-  images.style.setProperty("--split", `${screenPosition}%`);
-  images.style.setProperty("--divider", `${screenPosition}%`);
+  const styles = getComputedStyle(images);
 
-  slider.setAttribute(
-    "aria-valuetext",
-    `Original homepage occupies ${slider.value} percent of the screen`
-  );
-}
+  const screenLeft =
+    parseFloat(styles.getPropertyValue("--screen-left")) || 0;
+
+  const screenWidth =
+    parseFloat(styles.getPropertyValue("--screen-width")) || 100;
+
+  function updateComparison() {
+    const value = Number(slider.value);
+    const position = screenLeft + (value / 100) * screenWidth;
+
+    images.style.setProperty("--split", `${position}%`);
+    images.style.setProperty("--divider", `${position}%`);
+
+    slider.setAttribute(
+      "aria-valuetext",
+      `${value}% original design visible`
+    );
+  }
 
   slider.addEventListener("input", updateComparison);
   updateComparison();
 });
+
+// PROJECT CARD REVEAL ANIMATION
+(() => {
+  const cards = document.querySelectorAll('#work > .project-card');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  if (reducedMotion.matches || !('IntersectionObserver' in window)) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove('reveal-pending');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    rootMargin: '0px 0px -80px 0px',
+    threshold: 0
+  });
+
+  cards.forEach((card) => {
+
+    if (card.getBoundingClientRect().top < window.innerHeight) return;
+
+    card.classList.add('reveal-pending');
+    observer.observe(card);
+
+    card.addEventListener('focus', () => {
+      card.classList.remove('reveal-pending');
+      observer.unobserve(card);
+    }, { once: true });
+  });
+})();
