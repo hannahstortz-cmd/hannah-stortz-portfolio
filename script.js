@@ -267,3 +267,26 @@ document.querySelectorAll(".comparison").forEach((comparison) => {
     }, { once: true });
   });
 })();
+
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+if (!reduceMotion.matches) {
+  document.querySelectorAll('.hero svg.flower').forEach((flower) => {
+    flower.querySelectorAll('path').forEach((path, index) => {
+      const length = path.getTotalLength();
+
+      path.animate(
+        [
+          { strokeDasharray: `${length} ${length}`, strokeDashoffset: length },
+          { strokeDasharray: `${length} ${length}`, strokeDashoffset: 0 }
+        ],
+        {
+          duration: 1800,
+          delay: index * 100,
+          easing: 'ease-in-out',
+          fill: 'backwards'
+        }
+      );
+    });
+  });
+}

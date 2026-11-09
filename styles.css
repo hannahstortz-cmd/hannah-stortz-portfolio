@@ -1964,3 +1964,9 @@ body.modal-open {
   transition: none;
   }
 }
+
+.hero svg.flower {
+  display: block;
+  height: auto;
+  opacity: 0.3;
+}
