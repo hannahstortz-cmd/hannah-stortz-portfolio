@@ -488,7 +488,8 @@ p {
   .parking-row,
   .sj-row,
   .cf-row,
-  .mag-row) {
+  .mag-row,
+  .gcpt-row) {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
@@ -505,7 +506,8 @@ p {
   .parking-row,
   .sj-row,
   .cf-row,
-  .mag-row)>* {
+  .mag-row,
+  .gcpt-row)>* {
   min-width: 0;
 }
 
@@ -528,7 +530,8 @@ p {
   .parking-row,
   .sj-row,
   .cf-row,
-  .mag-row) .button {
+  .mag-row,
+  .gcpt-row) .button {
   margin-top: 16px;
 }
 
@@ -1438,7 +1441,8 @@ body.modal-open {
     .parking-row,
     .sj-row,
     .cf-row,
-    .mag-row) {
+    .mag-row,
+    .gcpt-row) {
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -1463,7 +1467,8 @@ body.modal-open {
     .parking-row,
     .sj-row,
     .cf-row,
-    .mag-row) {
+    .mag-row,
+    .gcpt-row) {
     padding: var(--section-space) var(--page-gutter);
   }
 
@@ -1476,7 +1481,8 @@ body.modal-open {
     .parking-row,
     .sj-row,
     .cf-row,
-    .mag-row)>* {
+    .mag-row,
+    .gcpt-row)>* {
     order: 0;
     width: 100%;
     min-width: 0;
@@ -1491,7 +1497,8 @@ body.modal-open {
     .parking-row,
     .sj-row,
     .cf-row,
-    .mag-row)> :is(img,
+    .mag-row,
+    .gcpt-row)> :is(img,
     .interaction-pair,
     .sunshine-mobile,
     .sunshine-sketches,
@@ -1512,7 +1519,8 @@ body.modal-open {
     .parking-row,
     .sj-row,
     .cf-row,
-    .mag-row)>div:not(.interaction-pair,
+    .mag-row,
+    .gcpt-row)>div:not(.interaction-pair,
     .sunshine-mobile,
     .sunshine-sketches,
     .comparison,
@@ -1969,4 +1977,87 @@ body.modal-open {
   display: block;
   height: auto;
   opacity: 0.3;
+}
+
+/* -- GREENE COUNTY PARKS & TRAILS --------------------------- */
+
+.gcpt .case-hero {
+  grid-template-columns:
+    minmax(0, 620px)
+    minmax(0, 460px);
+  justify-content: center;
+  gap: clamp(40px, 5vw, 75px);
+}
+
+.gcpt .gcpt-row {
+  gap: clamp(60px, 6vw, 95px);
+  padding-block: 140px;
+}
+
+.gcpt :is(.gcpt-overview, .gcpt-outcome) {
+  grid-template-columns:
+    minmax(0, 440px)
+    minmax(0, 660px);
+}
+
+.gcpt .gcpt-approach {
+  grid-template-columns:
+    minmax(0, 560px)
+    minmax(0, 460px);
+}
+
+.gcpt-visual {
+  min-width: 0;
+}
+
+.gcpt-comparison .comparison-images {
+  --screen-left: 10.4%;
+  --screen-width: 79.2%;
+  --screen-top: 2.5%;
+  --screen-height: 85%;
+}
+
+.gcpt-sketches {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.gcpt-sketches > img {
+  grid-row: 1;
+  width: 100%;
+  border: 2px solid #000;
+  border-radius: 6px;
+}
+
+.gcpt-sketches > img:first-child {
+  grid-column: 1 / 10;
+}
+
+.gcpt-sketches > img:last-child {
+  position: relative;
+  z-index: 1;
+  grid-column: 6 / 13;
+  transform: translateY(30px);
+}
+
+.gcpt {
+  max-width: none;
+  margin: 14px 0 0;
+  color: var(--navy);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .case-study.gcpt .gcpt-row > :is(
+  .gcpt-visual,
+  .gcpt-sketches
+) {
+  order: -1;
+  width: 100%;
+  max-width: 650px;
+  margin-inline: auto;
+}
 }
