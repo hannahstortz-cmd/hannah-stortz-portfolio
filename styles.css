@@ -577,21 +577,21 @@ p {
 }
 
 .brand-board img:nth-child(1) {
-  top: 3.5%;
-  left: 0;
-  width: 48%;
+  top: 17%;
+  left: 10%;
+  width: 36%;
 }
 
 .brand-board img:nth-child(2) {
-  top: 0;
-  left: 52%;
-  width: 48%;
+  top: 10%;
+  left: 50%;
+  width: 36%;
 }
 
 .brand-board img:nth-child(3) {
-  bottom: 0;
-  left: 20%;
-  width: 57%;
+  bottom: 10%;
+  left: 15%;
+  width: 45%;
 }
 
 
@@ -603,7 +603,7 @@ p {
   height: 116px;
   overflow: hidden;
   color: #1f325173;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 600;
 }
 
@@ -618,6 +618,8 @@ p {
   flex-shrink: 0;
   padding-right: 3px;
   white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 @keyframes scroll-process {
@@ -787,9 +789,9 @@ p {
 }
 
 .video-pair .video-laptop video {
-  left: 10.45%;
-  top: 2.5%;
-  width: 79.15%;
+  left: 10.3%;
+  top: 2.4%;
+  width: 79.4%;
   height: 84.92%;
   background: #1c1f23;
 }
@@ -890,17 +892,20 @@ p {
 }
 
 .lifebridge .lb-outcome {
-  grid-template-columns: minmax(0, 1.6fr) minmax(0, 460px);
-  gap: 50px;
-  padding-left: 0;
-  padding-right: clamp(30px, 6vw, 100px);
-  overflow: clip;
+  grid-template-columns: minmax(0, 750px) minmax(0, 580px);
+  justify-content: center;
+  gap: 40px;
+  padding-inline: var(--page-gutter);
 }
 
-.lifebridge .lb-outcome>img {
-  width: calc(100% + 50px);
-  max-width: none;
-  margin-left: -100px;
+.lb-outcome .mag-screen {
+  left: 10.3%;
+  width: 79.4%;
+}
+
+
+.lb-outcome>img {
+  margin-left: 100px;
 }
 
 

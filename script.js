@@ -70,7 +70,6 @@ if (workDropdown && workToggle && workMenu) {
         (lastPointerType === "touch" || lastPointerType === "pen")
       );
 
-    // First tap opens the dropdown; second tap follows Work.
     if (
       isTouchTap &&
       workToggle.getAttribute("aria-expanded") !== "true"
